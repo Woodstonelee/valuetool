@@ -460,9 +460,13 @@ class ValueWidget(QWidget, Ui_Widget):
               # create the item
               self.tableWidget.setItem(irow,0,QTableWidgetItem())
               self.tableWidget.setItem(irow,1,QTableWidgetItem())
+              self.tableWidget.setItem(irow,2,QTableWidgetItem())
+              self.tableWidget.setItem(irow,3,QTableWidgetItem())
 
           self.tableWidget.item(irow,0).setText(layername)
           self.tableWidget.item(irow,1).setText(value)
+          self.tableWidget.item(irow,2).setText("1")
+          self.tableWidget.item(irow,3).setText("15")
           irow+=1
 
 
